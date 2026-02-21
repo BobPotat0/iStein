@@ -11,8 +11,7 @@
 - 🎛️ **20 supported languages** to translate into
 - 🎨 **Clean, minimal UI** with a sleek dark popup
 - ⚡ **Lightweight** — no account needed, no bloat
-- 🔒 **Privacy-first** — translations use Google Translate's free API, no data stored
-
+- 🔒 **Privacy focused** — No data is stored by us, messages are sent directly to Google Translate API for instant processing
 ---
 
 ## 📦 Installation
