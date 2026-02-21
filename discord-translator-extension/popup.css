@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 280px;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.container {
+  padding: 24px 20px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #7a7a9e;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.setting-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #9a9ab0;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 12px;
+  background: #16213e;
+  color: #e0e0e0;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:hover {
+  border-color: #5c6bc0;
+}
+
+select:focus {
+  border-color: #7c4dff;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-transform: none;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.toggle-label input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 42px;
+  height: 22px;
+  background: #2a2a4a;
+  border-radius: 11px;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.toggle-slider::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+input:checked + .toggle-slider {
+  background: #7c4dff;
+}
+
+input:checked + .toggle-slider::after {
+  transform: translateX(20px);
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #4caf50;
+  text-align: center;
+  min-height: 16px;
+}

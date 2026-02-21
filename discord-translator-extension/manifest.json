@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "iStein",
+  "version": "1.0.0",
+  "description": "iStein: Your Discord Translator — auto-translate foreign language messages on Discord",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*", "https://*.discord.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
